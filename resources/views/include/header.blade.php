@@ -1,4 +1,4 @@
-<div class="shadow-sm py-4 justify-between flex">
+<div class="shadow-md py-4 justify-between flex">
     <div class="flex gap-6 items-center">
         <img src="assets/logo.svg" class="ml-10" width="10%" alt="">
         <a href="">Categories</a>

@@ -9,7 +9,7 @@
                     Repudiandae explicabo saepe eum nulla facilis maxime velit corporis culpa corrupti ullam consequatur,
                     animi inventore odio deleniti accusamus eos nihil autem laborum.</p>
                 <div class="flex justify-end">
-                    <a href=""
+                    <a href="{{route('viewAll')}}"
                         class="bg-teal-600 text-white px-3 py-2 rounded-lg font-sans text-xl mt-2 hover:bg-teal-900">Explore
                         Courses</a>
                 </div>
@@ -50,8 +50,9 @@
             <div class="w-1/5 ">
                 <div class="bg-white rounded border shadow">
                     <div class="p-2">
-                        <img src="https://codewithsadiq.com/public/images/placement/1639918531.jpg" class="rounded-lg"
-                            alt="">
+                        <div class="grid justify-items-center">
+                            <img src="https://codewithsadiq.com/public/images/placement/1639918531.jpg" class="rounded-lg object-cover h-72" alt="">
+                        </div>
                         <h2 class="text-center font-semibold text-lg">Alok Kumar</h2>
                         <p class="text-center text-sm font-semibold">Backend Devloper</p>
                         <p class="text-center text-gray-600 text-sm">@ uipro</p>
@@ -61,8 +62,9 @@
             <div class="w-1/5 ">
                 <div class="bg-white rounded border shadow">
                     <div class="p-2">
-                        <img src="https://codewithsadiq.com/public/images/placement/1639918531.jpg" class="rounded-lg"
-                            alt="">
+                        <div class="grid justify-items-center">
+                            <img src="https://codewithsadiq.com/public/images/placement/1639918531.jpg" class="rounded-lg object-cover h-72" alt="">
+                        </div>
                         <h2 class="text-center font-semibold text-lg">Alok Kumar</h2>
                         <p class="text-center text-sm font-semibold">Backend Devloper</p>
                         <p class="text-center text-gray-600 text-sm">@ uipro</p>
@@ -72,8 +74,9 @@
             <div class="w-1/5 ">
                 <div class="bg-white rounded border shadow">
                     <div class="p-2">
-                        <img src="https://codewithsadiq.com/public/images/placement/1639918531.jpg" class="rounded-lg"
-                            alt="">
+                        <div class="grid justify-items-center">
+                            <img src="https://codewithsadiq.com/public/images/placement/1639918531.jpg" class="rounded-lg object-cover h-72" alt="">
+                        </div>
                         <h2 class="text-center font-semibold text-lg">Alok Kumar</h2>
                         <p class="text-center text-sm font-semibold">Backend Devloper</p>
                         <p class="text-center text-gray-600 text-sm">@ uipro</p>
@@ -83,8 +86,9 @@
             <div class="w-1/5 ">
                 <div class="bg-white rounded border shadow">
                     <div class="p-2">
-                        <img src="https://codewithsadiq.com/public/images/placement/1639918531.jpg" class="rounded-lg"
-                            alt="">
+                        <div class="grid justify-items-center">
+                            <img src="https://codewithsadiq.com/public/images/placement/1639918531.jpg" class="rounded-lg object-cover h-72" alt="">
+                        </div>
                         <h2 class="text-center font-semibold text-lg">Alok Kumar</h2>
                         <p class="text-center text-sm font-semibold">Backend Devloper</p>
                         <p class="text-center text-gray-600 text-sm">@ uipro</p>
@@ -94,8 +98,9 @@
             <div class="w-1/5 ">
                 <div class="bg-white rounded border shadow">
                     <div class="p-2">
-                        <img src="https://codewithsadiq.com/public/images/placement/1639918531.jpg" class="rounded-lg"
-                            alt="">
+                        <div class="grid justify-items-center">
+                            <img src="https://codewithsadiq.com/public/images/placement/1639918531.jpg" class="rounded-lg object-cover h-72" alt="">
+                        </div>
                         <h2 class="text-center font-semibold text-lg">Alok Kumar</h2>
                         <p class="text-center text-sm font-semibold">Backend Devloper</p>
                         <p class="text-center text-gray-600 text-sm">@ uipro</p>

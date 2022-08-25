@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 </head>
 
-<body class="bg-gray-50">
+<body class="">
     @include('include/header')
     {{--<div class="mx-28">
             <h1 class="text-3xl font-bold font-mono mt-9 text-gray-800">A broad selection of courses</h1>
