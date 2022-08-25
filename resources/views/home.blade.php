@@ -5,9 +5,7 @@
         <div class="px-12 p-5">
             <div class="bg-white shadow-lg w-1/2 rounded-lg p-5 mt-12">
                 <h1 class="font-bold mb-3 font-sans text-4xl">First Course 100% Free</h1>
-                <p class="text-gray-600 font-semibold text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Repudiandae explicabo saepe eum nulla facilis maxime velit corporis culpa corrupti ullam consequatur,
-                    animi inventore odio deleniti accusamus eos nihil autem laborum.</p>
+                <p class="text-gray-600 font-semibold text-justify">Gain the job-ready skills you need to launch your career in IT Support, Data Analytics, UX Design or Project Management.Prepare for an entry-level job as a data analyst. In this program, you’ll learn how to collect, transform, and organize data in order to help draw new insights and make informed business decisions.</p>
                 <div class="flex justify-end">
                     <a href="{{route('viewAll')}}"
                         class="bg-teal-600 text-white px-3 py-2 rounded-lg font-sans text-xl mt-2 hover:bg-teal-900">Explore

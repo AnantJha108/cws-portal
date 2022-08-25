@@ -14,9 +14,9 @@
     </div>
     <ul class="flex gap-5 items-center">
         <li><a href="{{route('homepage')}}">Home</a></li>
-        <li class="border border-black py-1 px-3 hover:bg-gray-100 font-semibold rounded"><a href="">Login</a>
+        <li class="border border-black py-1 px-3 hover:bg-gray-100 font-semibold rounded"><a href="{{route('login')}}">Login</a>
         </li>
-        <li class=" border border-black py-1 px-3 bg-black text-white font-semibold rounded"><a href="">Sign
+        <li class=" border border-black py-1 px-3 bg-black text-white font-semibold rounded"><a href="{{route('register')}}">Sign
                 up</a></li>
         <li class="text-2xl mr-10"><a href=""><i class="bi bi-cart"></i></a></li>
     </ul>
