@@ -30,14 +30,16 @@
         <div class="flex gap-6 px-10">
             @foreach ($course as $item)
                 <div class="w-1/6 ">
-                    <div class="bg-white rounded border shadow">
-                        <div class="p-2">
-                            <img src="{{$item->image}}" class="rounded-lg object-cover h-52" alt="loading">
-                            <hr>
-                            <h2 class="text-center"><a href="{{route('viewCourse',$item->id)}}">{{$item->title}}</a></h2>
+                    <a href="{{route('view',$item->id)}}">
+                        <div class="bg-white rounded border shadow">
+                            <div class="p-2">
+                                <img src="{{asset('/images/'.$item->image)}}" class="rounded-lg object-cover h-52" alt="loading">
+                                <hr>
+                                <h2 class="text-center"><a href="{{route('view',$item->id)}}">{{$item->title}}</a></h2>
+                            </div>
+                            <div class="bg-teal-800 w-full p-3 rounded text-center text-white">Duration : {{$item->duration}} Months</div>
                         </div>
-                        <div class="bg-teal-800 w-full p-3 rounded text-center text-white">Duration : {{$item->duration}} Months</div>
-                    </div>
+                    </a>
                 </div>
             @endforeach
         </div>

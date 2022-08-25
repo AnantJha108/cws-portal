@@ -12,8 +12,8 @@ class HomeController extends Controller
         return view('home',$data);
     }
 
-    public function viewCourse(){
-        $data['view'] = Course::all();
+    public function viewCourse($id){
+        $data['item'] = Course::find($id);
         return view('viewCourse',$data);
     }
 }

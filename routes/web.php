@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/',[HomeController::class,"index"])->name("homepage");
-Route::get('/viewCourse',[HomeController::class,"viewCourse"])->name("viewCourse");
+Route::get('/viewCourse/{id}',[HomeController::class,"viewCourse"])->name("view");
 
 Route::prefix("admin")->group(function(){
     Route::get("/",[AdminController::class,"index"])->name("admin.dashboard");
