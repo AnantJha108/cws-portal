@@ -38,4 +38,18 @@ class AuthController extends Controller
         }
         return view("signup");
     }
+
+    public function adminLogin(Request $req){
+        if($req->isMethod("post")){
+            $data = $req->only("email","password");
+
+            if(Auth::attempt($data)){
+                return view("admin.dashboard");
+            }
+            else{
+                return ['error' => "Login failed"];
+            }
+        }
+        return view('admin.login');
+    }
 }

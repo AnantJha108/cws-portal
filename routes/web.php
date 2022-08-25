@@ -17,5 +17,6 @@ Route::get('/allCourse',[HomeController::class,"allCourse"])->name("viewAll");
 
 Route::prefix("admin")->middleware("auth")->group(function(){
     Route::get("/",[AdminController::class,"index"])->name("admin.dashboard");
+    Route::match(["post","get"],"/login",[AuthController::class,"adminLogin"])->name("admin.login");
     Route::resource('course',CourseController::class);
 });

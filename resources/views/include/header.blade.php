@@ -1,7 +1,7 @@
 <div class="shadow-md py-4 justify-between flex">
     <div class="flex gap-6 items-center">
         <img src="assets/logo.svg" class="ml-10" width="10%" alt="">
-        <a href="">Categories</a>
+        <a href="{{route('viewAll')}}">All Courses</a>
         <form action="" class="gap-0 flex">
             <input type="search" placeholder="Search for courses"
                 class="border border-purple-500 rounded-tl-lg rounded-bl-lg py-2 px-3 border-r-0" size="60">
@@ -14,9 +14,9 @@
     </div>
     <ul class="flex gap-5 items-center">
         <li><a href="{{route('homepage')}}">Home</a></li>
-        <li class="border border-black py-1 px-3 hover:bg-gray-100 font-semibold rounded"><a href="{{route('login')}}">Login</a>
+        <li><a href="{{route('login')}}" class="border border-black py-1 px-3 hover:bg-gray-100 font-semibold rounded">Login</a>
         </li>
-        <li class=" border border-black py-1 px-3 bg-black text-white font-semibold rounded"><a href="{{route('register')}}">Sign
+        <li><a href="{{route('register')}}" class="border border-black py-1 px-3 bg-black text-white font-semibold rounded">Sign
                 up</a></li>
         <li class="text-2xl mr-10"><a href=""><i class="bi bi-cart"></i></a></li>
     </ul>

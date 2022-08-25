@@ -1,15 +1,15 @@
 @extends('base')
 
 @section('content')
-    <div class="p-10">
+    <div class="px-10 py-5">
         <h2 class="font-semibold text-3xl text-gray-900">All Courses</h2>
         @foreach ($course as $item)
-        <div class="flex gap-5 my-4 p-10 border-2 border-gray-200 shadow-xl rounded-xl">
+        <div class="flex gap-5 mt-6 p-2 border-2 border-gray-200 shadow-xl rounded-xl">
             <div class="w-1/4">
                 <img src="{{ asset('images/' . $item->image) }}" class="shadow rounded-lg" alt="">
             </div>
             <div class="w-3/4">
-                <div class="bg-white rounded-lg border shadow p-8">
+                <div class="bg-white rounded-lg border shadow p-2">
                     <div class="p-2">
                         <h2 class="text-3xl font-bold uppercase">{{ $item->title }}</h2>
                         <div class="flex mt-2 gap-2">

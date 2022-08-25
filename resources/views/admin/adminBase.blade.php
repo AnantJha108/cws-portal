@@ -14,10 +14,9 @@
     <div class="shadow-sm bg-black py-4 justify-between flex">
         <div class="flex gap-6 items-center">
             {{-- <img src="assets/logo.svg" class="ml-10" width="25%" alt=""> --}}
-            <a href="" class="font-semibold ml-6 bold text-white text-xl">CWS || Admin Pannel</a>
+            <a href="{{route('admin.dashboard')}}" class="font-semibold ml-6 bold text-white text-xl">CWS || Admin Pannel</a>
         </div>
         <ul class="flex gap-5 items-center">
-            <li class="text-white"><a href="">Home</a></li>
             <li class="border bg-white py-1 px-3 hover:bg-gray-100 font-semibold rounded mr-10"><a href="">Logout</a>
             </li>
         </ul>
