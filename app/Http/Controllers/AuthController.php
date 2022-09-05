@@ -39,6 +39,11 @@ class AuthController extends Controller
         return view("signup");
     }
 
+    public function logout(){
+        Auth::guard("web")->logout();
+        return redirect()->route("login");
+    }
+
     public function adminLogin(Request $req){
         if($req->isMethod("post")){
             $data = $req->only("email","password");
@@ -51,5 +56,10 @@ class AuthController extends Controller
             }
         }
         return view('admin.login');
+    }
+
+    public function adminLogout(){
+        Auth::guard("admin")->logout();
+        return redirect()->route("admin.login");
     }
 }
