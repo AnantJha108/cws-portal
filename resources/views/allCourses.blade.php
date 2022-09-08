@@ -38,8 +38,8 @@
                         </p>
 
                         <div class="flex items-end gap-2">
-                            <h1 class="font-bold text-6xl text-red-600">₹ {{ $item->discount_price }}</h1>
-                            <h2 class=" font-semibold text-4xl text-gray-900 line-through">₹{{ $item->price }}</h2>
+                            <h1 class="font-bold text-6xl text-red-600">₹ {{ $item->price }}</h1>
+                            <h2 class=" font-semibold text-4xl text-gray-900 line-through">₹{{ $item->discount_price }}</h2>
                         </div>
                         <div class="flex gap-3 mt-3">
                             <a href="" class="bg-green-800 px-3 py-2 rounded text-white">Join Course</a>

@@ -102,6 +102,7 @@ class CourseController extends Controller
         // $request->image->move(public_path("course_images"), $file);
         // $data->image = $file;
         $data->save();
+        return view("admin.dashboard");
     }
 
     /**
