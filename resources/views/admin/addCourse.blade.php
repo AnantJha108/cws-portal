@@ -27,6 +27,15 @@
                         <label for="">Image</label>
                         <input type="file" name="image" class="border border-gray-400 px-2 py-2 rounded">
                     </div>
+                    <div class="flex mb-3 flex-col col-span-2">
+                        <label for="">Category</label>
+                        <select name="category_id" class="border border-gray-400 px-2 py-2 rounded">
+                            <option value="">select category here</option>
+                            @foreach ($categories as $item)
+                                <option value="{{$item->id}}">{{$item->cat_title}}</option>
+                            @endforeach
+                        </select>
+                    </div>
                     <div class="flex mb-3 flex-col col-span-3">
                         <label for="">Description</label>
                         <textarea name="description" class="border border-gray-400 px-2 py-2 rounded" cols="30" rows="10"></textarea>

@@ -4,12 +4,13 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
+use App\Models\Category;
 use Illuminate\Support\Facades\Auth;
 
 class AuthController extends Controller
 {
     public function login(Request $req){
-
+        $data['category'] = Category::all();
         if($req->isMethod("post")){
             $data = $req->only("email","password");
 
@@ -20,10 +21,10 @@ class AuthController extends Controller
                 return ['error' => "Login failed"];
             }
         }
-        return view("login");
+        return view("login",$data);
     }
     public function register(Request $req){
-
+        $data['category'] = Category::all();
         if($req->isMethod("post")){
             $data = $req->validate([
                 'email' => 'required',
@@ -36,7 +37,7 @@ class AuthController extends Controller
             return redirect()->route("login");
 
         }
-        return view("signup");
+        return view("signup",$data);
     }
 
     public function logout(){
@@ -45,6 +46,7 @@ class AuthController extends Controller
     }
 
     public function adminLogin(Request $req){
+        $data['category'] = Category::all();
         if($req->isMethod("post")){
             $data = $req->only("email","password");
 
@@ -55,7 +57,7 @@ class AuthController extends Controller
                 return ['error' => "Login failed"];
             }
         }
-        return view('admin.login');
+        return view('admin.login',$data);
     }
 
     public function adminLogout(){

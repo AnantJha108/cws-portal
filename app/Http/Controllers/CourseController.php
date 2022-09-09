@@ -2,38 +2,23 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
 use App\Models\Course;
 use Illuminate\Http\Request;
 
 class CourseController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
         $data['course'] = Course::all();
         return view ("admin.manageCourse",$data);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function create()
     {
-        return view ("admin.addCourse");
+        return view ("admin.addCourse",["categories" => Category::all()]);
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(Request $request)
     {
         $data = $request->validate([
@@ -42,6 +27,7 @@ class CourseController extends Controller
             'price' => 'required',
             'discount_price' => 'required',
             'image' => 'required|image',
+            'category_id' => 'required',
             'description' => 'required',
         ]);
         $filename = $request->image->getClientOriginalName();
@@ -88,6 +74,7 @@ class CourseController extends Controller
             'title' => 'required',
             'duration' => 'required',
             'price' => 'required',
+            'category_id' => 'required',
             'discount_price' => 'required',
             'description' => 'required',
         ]);
@@ -97,6 +84,7 @@ class CourseController extends Controller
         $data->title = $request->title;
         $data->duration = $request->duration;
         $data->price = $request->price;
+        $data->category_id = $request->category_id;
         $data->discount_price = $request->discount_price;
         $data->description = $request->description;
         // $request->image->move(public_path("course_images"), $file);
