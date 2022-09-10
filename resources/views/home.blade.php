@@ -56,7 +56,7 @@
                     <div class="bg-white rounded border shadow">
                         <div class="p-2">
                             <div class="grid justify-items-center">
-                                <img src="{{ asset('/images/' . $item->image) }}" class="rounded-lg object-cover h-72" alt="">
+                                <img src="{{ asset("/images/" . $item->image) }}" class="rounded-lg object-cover h-72" alt="">
                             </div>
                             <h2 class="text-center font-semibold text-lg">{{$item->name}}</h2>
                             <p class="text-center text-sm font-semibold">{{$item->position}}</p>

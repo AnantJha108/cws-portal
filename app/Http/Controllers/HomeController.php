@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Course;
 use App\Models\Category;
 use App\Models\Placement;
+use App\Models\StudentCourses;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -19,6 +20,10 @@ class HomeController extends Controller
     public function viewCourse($id){
         $data['item'] = Course::find($id);
         $data['category'] = Category::all();
+        
+
+        $courseStudentData = StudentCourses::where([["course_id",$id], ["user_id",auth()->id()]])->exists();
+        $data['isAlreadyExist'] = $courseStudentData;
         return view('viewCourse',$data);
     }
 
