@@ -4,14 +4,14 @@
     <div class="flex gap-2">
         @include('admin.side')
         <div class="w-3/5 h-screen">
-            <table class="w-3/4 bg-red-700">
+            <table class="w-full bg-red-700">
                 <div class="flex justify-between px-4 items-center mt-3">
                     <h2 class="text-2xl font-bold font-sans">Manage Courses</h2>
                 </div>
             </table>
-            <div class="w-1/5 py-10 px-4">
+            <div class="w-3/5 mx-auto py-10 px-4">
                 <form action="{{route('category.update',$category)}}" method="POST"
-                    class="space-y-3 shadow-xl border border-gray-300 p-3 rounded-lg bg-gray-50">
+                    class="space-y-3 shadow-xl border border-gray-300 p-3 rounded-lg  bg-gray-50">
                     @csrf
                     @method("put")
                     <div class="mb-3">

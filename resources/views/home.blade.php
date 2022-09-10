@@ -37,7 +37,8 @@
                                 <img src="{{ asset('/images/' . $item->image) }}" class="rounded-lg object-cover h-52"
                                     alt="loading">
                                 <hr>
-                                <h2 class="text-center"><a href="{{ route('view', $item->id) }}">{{ $item->title }}</a></h2>
+                                <h2 class="text-center"><a href="{{ route('view', $item->id) }}">{{ $item->title }}</a>
+                                </h2>
                             </div>
                             <div class="bg-teal-800 w-full p-3 rounded text-center text-white">Duration :
                                 {{ $item->duration }} Months</div>
@@ -50,72 +51,20 @@
     <div>
         <h2 class="font-semibold text-3xl px-14 py-4">Our Achievements</h2>
         <div class="flex gap-5 py-4 px-20">
-            <div class="w-1/5 ">
-                <div class="bg-white rounded border shadow">
-                    <div class="p-2">
-                        <div class="grid justify-items-center">
-                            <img src="https://codewithsadiq.com/public/images/placement/1639918531.jpg"
-                                class="rounded-lg object-cover h-72" alt="">
+            @foreach ($placement as $item)
+                <div class="w-1/5 ">
+                    <div class="bg-white rounded border shadow">
+                        <div class="p-2">
+                            <div class="grid justify-items-center">
+                                <img src="{{ asset('/images/' . $item->image) }}" class="rounded-lg object-cover h-72" alt="">
+                            </div>
+                            <h2 class="text-center font-semibold text-lg">{{$item->name}}</h2>
+                            <p class="text-center text-sm font-semibold">{{$item->position}}</p>
+                            <p class="text-center text-gray-600 text-sm">{{$item->company_name}}</p>
                         </div>
-                        <h2 class="text-center font-semibold text-lg">Alok Kumar</h2>
-                        <p class="text-center text-sm font-semibold">Backend Devloper</p>
-                        <p class="text-center text-gray-600 text-sm">@ uipro</p>
                     </div>
                 </div>
-            </div>
-            <div class="w-1/5 ">
-                <div class="bg-white rounded border shadow">
-                    <div class="p-2">
-                        <div class="grid justify-items-center">
-                            <img src="https://codewithsadiq.com/public/images/placement/1639918531.jpg"
-                                class="rounded-lg object-cover h-72" alt="">
-                        </div>
-                        <h2 class="text-center font-semibold text-lg">Alok Kumar</h2>
-                        <p class="text-center text-sm font-semibold">Backend Devloper</p>
-                        <p class="text-center text-gray-600 text-sm">@ uipro</p>
-                    </div>
-                </div>
-            </div>
-            <div class="w-1/5 ">
-                <div class="bg-white rounded border shadow">
-                    <div class="p-2">
-                        <div class="grid justify-items-center">
-                            <img src="https://codewithsadiq.com/public/images/placement/1639918531.jpg"
-                                class="rounded-lg object-cover h-72" alt="">
-                        </div>
-                        <h2 class="text-center font-semibold text-lg">Alok Kumar</h2>
-                        <p class="text-center text-sm font-semibold">Backend Devloper</p>
-                        <p class="text-center text-gray-600 text-sm">@ uipro</p>
-                    </div>
-                </div>
-            </div>
-            <div class="w-1/5 ">
-                <div class="bg-white rounded border shadow">
-                    <div class="p-2">
-                        <div class="grid justify-items-center">
-                            <img src="https://codewithsadiq.com/public/images/placement/1639918531.jpg"
-                                class="rounded-lg object-cover h-72" alt="">
-                        </div>
-                        <h2 class="text-center font-semibold text-lg">Alok Kumar</h2>
-                        <p class="text-center text-sm font-semibold">Backend Devloper</p>
-                        <p class="text-center text-gray-600 text-sm">@ uipro</p>
-                    </div>
-                </div>
-            </div>
-            <div class="w-1/5 ">
-                <div class="bg-white rounded border shadow">
-                    <div class="p-2">
-                        <div class="grid justify-items-center">
-                            <img src="https://codewithsadiq.com/public/images/placement/1639918531.jpg"
-                                class="rounded-lg object-cover h-72" alt="">
-                        </div>
-                        <h2 class="text-center font-semibold text-lg">Alok Kumar</h2>
-                        <p class="text-center text-sm font-semibold">Backend Devloper</p>
-                        <p class="text-center text-gray-600 text-sm">@ uipro</p>
-                    </div>
-                </div>
-            </div>
+            @endforeach
         </div>
     </div>
-
 @endsection

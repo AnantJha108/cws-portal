@@ -23,11 +23,11 @@
                         <label for="">Discount Price</label>
                         <input type="text" name="discount_price" class="border border-gray-400 px-2 py-2 rounded">
                     </div>
-                    <div class="flex mb-3 flex-col col-span-2">
+                    <div class="flex mb-3 flex-col">
                         <label for="">Image</label>
                         <input type="file" name="image" class="border border-gray-400 px-2 py-2 rounded">
                     </div>
-                    <div class="flex mb-3 flex-col col-span-2">
+                    <div class="flex mb-3 flex-col">
                         <label for="">Category</label>
                         <select name="category_id" class="border border-gray-400 px-2 py-2 rounded">
                             <option value="">select category here</option>

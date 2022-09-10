@@ -4,12 +4,14 @@ namespace App\Http\Controllers;
 
 use App\Models\Course;
 use App\Models\Category;
+use App\Models\Placement;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
     public function index(){
         $data['course'] = Course::paginate(6);
+        $data['placement'] = Placement::paginate(5);
         $data['category'] = Category::all();
         return view('home',$data);
     }

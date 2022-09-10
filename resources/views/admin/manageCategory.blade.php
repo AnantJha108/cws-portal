@@ -23,7 +23,7 @@
                                 <td class="border border-slate-400 p-1">{{$item->cat_description}}</td>
                                 <td class="border border-slate-400 border-b-0 p-2 flex gap-3">
                                     <a href="{{route('category.edit',$item)}}" class="bg-green-500 rounded px-3 py-1 text-white hover:bg-green-700">Edit</a>
-                                    <form action="" method="POST">
+                                    <form action="{{route('category.destroy',$item)}}" method="POST">
                                         @csrf
                                         @method('delete')
                                         <input type="submit" class="bg-red-500 rounded px-3 py-1 text-white hover:bg-red-700" value="Delete">
