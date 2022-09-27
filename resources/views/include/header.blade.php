@@ -6,7 +6,7 @@
             <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefault">
               @foreach ($category as $item)
               <li>
-                <a href="#" class="block py-2 px-4 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-white">{{$item->cat_title}}</a>
+                <a href="" class="block py-2 px-4 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-white">{{$item->cat_title}}</a>
               </li>
               @endforeach
             </ul>

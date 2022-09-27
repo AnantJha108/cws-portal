@@ -17,7 +17,7 @@
             <a href="{{route('admin.dashboard')}}" class="font-semibold ml-6 bold text-white text-xl">CWS || Admin Pannel</a>
         </div>
         <ul class="flex gap-5 items-center">
-            <li class="border bg-white py-1 px-3 hover:bg-gray-100 font-semibold rounded mr-10"><a href="{{route('admin.logout')}}">Logout</a>
+            <li><a href="{{route('admin.logout')}}" class="border bg-white py-1 px-3 hover:bg-gray-100 font-semibold rounded mr-10">Logout</a>
             </li>
         </ul>
     </div>

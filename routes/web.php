@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
     Route::match(["post", "get"], "/login", [AuthController::class, "login"])->name("login");
     Route::match(["post", "get"], "/register", [AuthController::class, "register"])->name("register");
     Route::get("/logout", [AuthController::class, "logout"])->name("logout");
-//});
+// });
 
 
 Route::get('/', [HomeController::class, "index"])->name("homepage");

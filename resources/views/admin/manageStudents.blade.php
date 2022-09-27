@@ -25,8 +25,8 @@
                                 <td class="border border-slate-400 p-1">{{ $item->email }}</td>
                                
                                 <td class="border border-slate-400 p-1 flex gap-3">
-                                    <a href="{{route('course.edit',$item)}}" class="bg-green-500 rounded px-3 py-1 text-white hover:bg-green-700">Edit</a>
-                                    <form action="{{ route('course.destroy', $item) }}" method="POST">
+                                    <a href="" class="bg-green-500 rounded px-3 py-1 text-white hover:bg-green-700">Edit</a>
+                                    <form action="" method="POST">
                                         @csrf
                                         @method('delete')
                                         <input type="submit" class="bg-red-500 rounded px-3 py-1 text-white hover:bg-red-700" value="Delete">
